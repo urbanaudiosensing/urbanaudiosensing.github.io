@@ -37,6 +37,10 @@ ol, ul {
 	list-style: none;
 }
 
+figcaption {
+	font-size: 0.8em;
+}
+
 blockquote, q {
 	quotes: none;
 }
@@ -163,12 +167,12 @@ input, select, textarea {
 
 	h5 {
 		font-size: 0.9em;
-		line-height: 1.5em;
+		line-height: 1.2em;
 	}
 
 	h6 {
 		font-size: 0.7em;
-		line-height: 1.5em;
+		line-height: 1.2em;
 	}
 
 	sub {
@@ -2566,8 +2570,8 @@ input, select, textarea {
 
 		.image.center {
 			float: center;
-			margin: 3em 0 3em 0;
-			max-width: 60%;
+			margin: 1em 0 1em 0;
+			max-width: 50%;
 		}
 
 			.image.center img {
@@ -3153,11 +3157,11 @@ input, select, textarea {
 		}
 
 		.spotlight.style2 .content {
-			border-color: #5480f1;
+			border-color: #e44c65;
 		}
 
 		.spotlight.style3 .content {
-			border-color: #39c088;
+			border-color: #e44c65;
 		}
 
 		.spotlight.inactive .content {
