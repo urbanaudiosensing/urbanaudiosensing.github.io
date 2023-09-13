@@ -239,6 +239,45 @@ input, select, textarea {
 		text-align: right;
 	}
 
+/* Added Animation */
+	.collapsible {
+	  background-color: rgba(255, 255, 255, 0.075);
+	  color: white;
+	  cursor: pointer;
+	  padding: 20px;
+	  width: 100%;
+	  border: none;
+	  text-align: left;
+	  outline: none;
+	  font-size: 15px;
+	}
+
+	.active, .collapsible:hover {
+	  background-color: #e44c65;
+	}
+
+	.coll_content {
+	  padding: 0 18px;
+	  display: none;
+	  overflow: hidden;
+	  background-color: #1c1d26;
+	}
+
+	.collapsible:after {
+	  content: '\02795'; /* Unicode character for "plus" sign (+) */
+	  font-size: 13px;
+		font-weight: bold;
+	  color: white;
+	  float: left;
+	  margin-left: 5px;
+		margin-right: 15px;
+	}
+
+	.active:after {
+	  content: "\2796"; /* Unicode character for "minus" sign (-) */
+		color: white;
+	}
+
 /* Loader */
 
 	@-moz-keyframes spinner-show {
@@ -2788,6 +2827,10 @@ input, select, textarea {
 
 		table td {
 			padding: 0.75em 0.75em;
+		}
+
+		table td.alnright {
+			text-align: right;
 		}
 
 		table th {
