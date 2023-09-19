@@ -79,13 +79,13 @@
                                             <tr>
                                                 <td>Audio Data Package</td>
                                                 <td>ASPED 1.0 Session 1-5 Audio Recording<br>ASPED 1.0 Session 1-5 Annotation (.CSV)</td>
-                                                <td class="alnright">xx TB</td>
+                                                <td class="alnright">580 GB (Approx. 3 TB after decoding)</td>
                                                 <td>link url</td>
                                             </tr>
                                             <tr>
                                                 <td>Video Data Package</td>
                                                 <td>ASPED 1.0 Session 1-5 Video Recording (.MP4)</td>
-                                                <td class="alnright">xx TB</td>
+                                                <td class="alnright">Approx. 2 TB</td>
                                                 <td>link url</td>
                                             </tr>
                                             <tr>
@@ -98,7 +98,7 @@
                                                         <li>Start and end time of recordings</li>
                                                     </ul>
                                                 </td>
-                                                <td class="alnright">xx TB</td>
+                                                <td class="alnright">3.12 MB</td>
                                                 <td><a href="publications/Metadata-KlausTechway.xlsx">Download</a></td>
                                             </tr>
                                         </tbody>
@@ -253,7 +253,11 @@
                                     <div class="col-4 col-6-xsmall"><span class="image fit"><img src="images/ASPED/installing.JPG" alt="" /></span></div>
                                     <div class="col-4 col-6-xsmall"><span class="image fit"><img src="images/ASPED/recorders.JPG" alt="" /></span></div>
                                 </div></br>
-                                Encoding and Decoding information
+                                All the audio files are encoded as FLAC files. FLAC is a widely applied lossless audio encoding format.
+                                For more information about FLAC, please refer to this <a href="https://en.wikipedia.org/wiki/FLAC">Wikipedia page</a>    </br></br>
+                                For decoding, you can use ffmpeg by running `ffmpeg -i /PATH/TO/FLAC.flac -o /PATH/TO/WAV.wav` or
+                                use python packages like '<a href="https://github.com/jiaaro/pydub">Pydub</a>'.
+                                The WAV format audio will be about 3 TB in total and the FLAC format will be about 580 GB.
                                 </p>
                                 </br></br>
 
