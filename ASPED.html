@@ -64,7 +64,13 @@
                                     For more information, please take a look at <a href="publications/2024_ICASSP_ASPED.pdf">our paper</a> in progress.
                                 </p>
 																<hr>
-                                <h3>Download</h3>
+                                <h3>Download ASPED v1.0</h3>
+                                <ul>
+                                  <li> We understand that our data package is quite extensive!
+                                Feel free to start with our <font color="#e44c65">mini test package</font> for a trial.
+                                It includes one segment of our audio file along with the matching annotation file.</li>
+                                  <li> Our model is available in our github repository, <a href="https://github.com/urbanaudiosensing/Models">here</a>.</li>
+                                </ul>
                                 <div class="table-wrapper">
                                     <table class="alt">
                                         <thead>
@@ -77,21 +83,34 @@
                                         </thead>
                                         <tbody>
                                             <tr>
+                                              <td>Mini Test Data Package</td>
+                                              <td>
+                                                ASPED v1.0 Session 1 Mini Package
+                                                <ul>
+                                                    <li>one audio file (.MP4)</li>
+                                                    <li>one annotation file (.CSV)</li>
+                                                    <li>metadata file (.XLSX)</li>
+                                                </ul>
+                                              </td>
+                                              <td>*</td>
+                                              <td><i>Coming Soon!</i></td>
+                                            </tr>
+                                            <tr>
                                                 <td>Audio Data Package</td>
-                                                <td>ASPED 1.0 Session 1-5 Audio Recording (.MP4)<br>ASPED 1.0 Session 1-5 Annotation (.CSV)</td>
-                                                <td class="alnright">580 GB </br>(approx. 3 TB after decoding)</td>
+                                                <td>ASPED v1.0 Session 1-5 Audio Recording (.MP4)<br>ASPED 1.0 Session 1-5 Annotation (.CSV)</td>
+                                                <td class="alnright">580 GB </br>(Approx. 3 TB after decoding)</td>
                                                 <td><i>Coming Soon!</i></td>
                                             </tr>
                                             <tr>
                                                 <td>Video Data Package</td>
-                                                <td>ASPED 1.0 Session 1-5 Video Recording (.MP4)</td>
-                                                <td class="alnright">approx. 2 TB</td>
+                                                <td>ASPED v1.0 Session 1-5 Video Recording (.MP4)</td>
+                                                <td class="alnright">Approx. 2 TB</td>
                                                 <td><i>Coming Soon!</i></td>
                                             </tr>
                                             <tr>
                                                 <td>Metadata</td>
                                                 <td>
-                                                    ASPED 1.0 Session 1-5 Metadata (.XLSX)
+                                                    ASPED v1.0 Session 1-5 Metadata (.XLSX)
                                                     <ul>
                                                         <li>Session time, location map</li>
                                                         <li>Device coordinates</li>
@@ -101,13 +120,10 @@
                                                 <td class="alnright">3.12 MB</td>
                                                 <td><a href="publications/Metadata-KlausTechway.xlsx">Download</a></td>
                                             </tr>
-                                            <tr>
-                                              <td>Mini Test Data Package</td>
-                                              <td>Want to </td>
-                                            </tr>
                                         </tbody>
                                     </table>
                                 </div>
+
 																<hr>
                                 <h3><strong>Data Description</strong></h3>
 
@@ -209,14 +225,14 @@
                                 </br></br>
 
                                 <h4 id="audio">2. Audio Data</h4>
-                                <p>Our Audio data is awesome.</br>
+                                <p>
                                 <ul class="actions fit">
                                   <li><button type="button" class="collapsible">File Structure</button>
                                   <div class="coll_content">
                                     <p>
                                     <blockquote>
                                       |--Metadata.xlsx </br>
-                                      |--Test_5242023 </br>
+                                      |--Session_5242023 </br>
                                       &emsp;&emsp;|-- Cadell </br>
                                       &emsp;&emsp;&emsp;&emsp;|--Audio  &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<i> * each location has multiple recorders</i></br>
                                       &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;|--Recorder1_[device-name] </br>
@@ -262,12 +278,12 @@
                                     <p>
                                     <blockquote>
                                       |--Metadata.xlsx </br>
-                                      |--Test_5242023 </br>
+                                      |--Session_5242023 </br>
                                       &emsp;&emsp;|-- Cadell </br>
                                       &emsp;&emsp;&emsp;&emsp;|--Video  &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<i> * each location has one camera</i></br>
                                       &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;|--Camera1_[device-name] </br>
-                                      &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;|--[video1].wav </br>
-                                      &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;|--[video2].wav </br>
+                                      &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;|--[video1].MP4 </br>
+                                      &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;|--[video2].MP4 </br>
                                       &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;... </br>
                                       &emsp;&emsp;&emsp;&emsp;|-- TechwayA </br>
                                       &emsp;&emsp;&emsp;&emsp;|-- TechwayB </br>
@@ -307,18 +323,6 @@
                                     which was trained using the Microsoft COCO dataset.
                                 </p>
 																</br></br>
-
-                                <h4 id = "metadata">5. Metadata </h4>
-                                <p>
-                                </p>
-                                <h5>Data Volume</h5>
-                                <p>
-                                <ul>
-                                    <li>Entire dataset is around 5 TB. </li>
-                                    <li>Each session is around 1 TB (including both video and audio).</li>
-                                    <li>Audio files and video files in each session are around 3 TB and 2 TB, respectively. </li>
-                                </ul>
-                                </p>
                             </section>
                         </div>
                     </div>
