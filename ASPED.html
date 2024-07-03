@@ -21,6 +21,7 @@
                 <h1 id="logo"><a href="index.html">Urban Audio Sensing</a></h1>
                 <nav id="nav">
                     <ul>
+                        <!--<li><a href="index.html">Home</a></li>-->
                         <li><a href="team.html">Meet the Team</a></li>
                         <li>
                           <a href="ASPED.html">Download ASPED</a>
@@ -33,41 +34,41 @@
                         <li><a href="publication.html">Publications</a></li>
                     </ul>
                     </li>
+                    <!--<li><a href="contact.html">Contact</a></li>-->
+                    <!--<li><a href="#" class="button primary">Sign Up</a></li> -->
                     </ul>
                 </nav>
             </header>
+
             <!-- Main -->
             <div id="main" class="wrapper style1">
                 <div class="container">
                     <header class="major">
-                        <h2>Publications</h2>
+                        <h2><b>ASPED</b>: <b>A</b>udio <b>S</b>ensing for <b>PE</b>destrian <b>D</b>etection Dataset</h2>
                     </header>
                     <div class="row gtr-150">
                         <div class="col-12 col-12-medium imp-medium">
                             <!-- Content -->
                             <section id="content">
-                                <h3>Publications</h3>
-                                <p>Seshadri, P., Han, C., Koo, B., Posner, N., Guhathakurta, S., & Lerch, A. (2024).
-                                  ASPED: An Audio Dataset for Detecting Pedestrians. [Journal-article]. IEEE ICASSP 2024.
-                                  <!--International Conference on Acoustics, Speech and Signal Processing.-->
-                                  </br>
-                                  <a href="publications/2024_ICASSP_ASPED.pdf">Download PDF</a></br>
-                                  <a href="https://arxiv.org/abs/2309.06531">Access from arXiv</a>
+                                <h3>Overview</h3>
+                                <p><b>ASPED</b> (<b>A</b>udio <b>S</b>ensing for <b>PE</b>destrian <b>D</b>etection) is a large-scale audio and video dataset prepared for pedestrian detection using sound.
+                                  <b>ASPED.a</b> consists of almost 2,600 hours of audio, more than 3.4 million continuous frames in video,
+                                    and corresponding annotation of pedestrian count for each audio and video. For more information, please take a look at <a href="publications/2024_ICASSP_ASPED.pdf">our paper</a> published and presented in IEEE ICASSP 2024.
+                                    <br><br>
+                                    We are currently processing the second round of collected data, <b>ASPED.b</b>, to make it publicly available.
+                                    Unlike ASPED.a, which was gathered in a vehicle-free campus environment, ASPED.b features data collected amidst vehicular noise.
+                                    We are investigating the differences in pedestrian sensing performance between these two distinct environments.
                                 </p>
-                                <p>Han, C., Seshadri, P., Ding, Y., Posner, N., Koo, B. W., Center for Spatial Planning Analytics and Visualization, Agrawal, A., Lerch, A., Guhathakurta, S., Music Informatics Group, IPaT, & School of Urban & Regional Planning. (2024).
-                                  Understanding pedestrian movement using urban sensing Technologies: the promise of audio-based sensors. Urban Informatics.
-                                  </br>
-                                  <a href="https://arxiv.org/pdf/2406.09998">Access from arXiv</a>
-                                </p>
-
-                                <h3>Presentations</h3>
-                                <p>Seshadri, P., Han, C., Koo, B., Posner, N., Guhathakurta, S., & Lerch, A. (2024, April 16).
-                                  ASPED: An Audio Dataset for Detecting Pedestrians. IEEE ICASSP 2024, Seoul, Korea. https://cmsworkshops.com/ICASSP2024/view_paper.php?PaperNum=2595
-                                </p>
-                                <p>Seshadri, P., Ding, Y., Han, C., Posner, N., Guhathakurta, S., & Lerch, A. (2024, May 17).
-                                  Toward Audio-Based Sensing for Pedestrian Detection. 186th Meeting of the Acoustical Society of America, Ottawa, Canada.
-                                </p>
-
+                                <ol style="margin-left: 2em;">
+                                  <li><a href="ASPEDa.html">Download ASPED.a</a> </li>
+                                  <li><a href="ASPEDb.html">Download ASPED.b</a> </li>
+                                </ol>
+                                <hr>
+                                <h3>Model</h3>
+                                <ul>
+                                  <li> Our model is available in our github repository, <a href="https://github.com/urbanaudiosensing/Models">here</a>.</li>
+                                </ul>
+                              </br>
                             </section>
                         </div>
                     </div>
@@ -87,6 +88,22 @@
             </footer>
         </div>
         <!-- Scripts -->
+        <script>
+          var coll = document.getElementsByClassName("collapsible");
+          var i;
+
+          for (i = 0; i < coll.length; i++) {
+            coll[i].addEventListener("click", function() {
+              this.classList.toggle("active");
+              var coll_content = this.nextElementSibling;
+              if (coll_content.style.display === "block") {
+                coll_content.style.display = "none";
+              } else {
+                coll_content.style.display = "block";
+              }
+            });
+          }
+        </script>
         <script src="assets/js/jquery.min.js"></script>
         <script src="assets/js/jquery.scrolly.min.js"></script>
         <script src="assets/js/jquery.dropotron.min.js"></script>
