@@ -1,4 +1,3 @@
-# urbanaudiosensing.github.io
 # Urban Audio Sensing
 
 [![GitHub](https://img.shields.io/badge/GitHub-urbanaudiosensing-blue.svg)](https://github.com/urbanaudiosensing)
@@ -30,15 +29,15 @@ Urban Audio Sensing is a research initiative that explores how audio technology 
 - Collected in a **vehicle-free campus environment**
 - Published and presented at IEEE ICASSP 2024
 
-### ASPED.b (Coming Soon)
+### ASPED.b
 - Second round of collected data
 - Features data collected amidst **vehicular noise**
 - Investigating differences in pedestrian sensing performance between environments
 
 ### Download
-- [Dataset Overview](ASPED.html)
-- [ASPED.a Dataset](ASPEDa.html)
-- [ASPED.b Dataset](ASPEDb.html)
+- [Dataset Overview](https://urbanaudiosensing.github.io/ASPED.html)
+- [ASPED.a Dataset](https://urbanaudiosensing.github.io/ASPEDa.html)
+- [ASPED.b Dataset](https://urbanaudiosensing.github.io/ASPEDb.html)
 
 ## Project Structure
 
