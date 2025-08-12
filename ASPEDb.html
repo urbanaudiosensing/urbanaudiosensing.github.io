@@ -125,10 +125,13 @@
 																<hr>
                                 <h3><strong>Data Description</strong></h3>
 
-																<ol style="margin-left: 2em;">
-																	<li><a href="#session">Session Details</a> </li>
-                                  <li>Check File Structures from <a href="ASPEDa.html">ASPED.a Data Description Page</a> </li>
-																</ol>
+								<ol style="margin-left: 2em;">
+								    <li><a href="#session">Session Details</a> </li>
+                                    <li><a href="#layout">Recorder Locations/Layout</a> </li>
+                                    <li><a href="#audio">Audio Data</a> </li>
+									<li><a href="#video">Video Data</a> </li>
+									<li><a href="#annotation">Annotation Data</a> </li>
+								</ol>
 
                                 <h4 id="session">1. ASPED.b Session Details</h4>
                                 <div class="table-wrapper">
@@ -185,6 +188,113 @@
                                     </table>
                                   </div>
                                 </br></br>
+
+                                <h4 id="layout">2. ASPED.b Recorder Locations/Layout</h4>
+
+                                <p>
+                                The ASPED.b dataset was collected on Fifth Street, Georgia Tech, across four sessions in 2023. The data includes synchronized audio and video recordings from multiple locations, with each session covering several intersections and street segments. The dataset is designed to support research in pedestrian detection under urban noise conditions.
+                                </p>
+
+                                <div class="row gtr-50 gtr-uniform">
+                                <div class="col-12"><span class="image fit"><img src="images/ASPED.b/AspedB_Recorders.png" alt="ASPED.b recorders" /></span></div>
+                                </div>
+                                <br/>
+
+                                <h4 id="audio">3. Audio Data</h4>
+                                <p>
+                                <ul class="actions fit">
+                                  <li><button type="button" class="collapsible">File Structure</button>
+                                  <div class="coll_content">
+                                    <p>
+                                        <blockquote>
+                                        |--Session_07262023<br>
+                                        &emsp;&emsp;|-- FifthSt_A<br>
+                                        &emsp;&emsp;&emsp;&emsp;|-- Audio<br>
+                                        &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;|-- [Recorder1]<br>
+                                        &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;|-- 0001.flac<br>
+                                        &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;|-- 0002.flac<br>
+                                        &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;...<br>
+                                        &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;...<br>
+                                        &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;|-- [Recorder2]<br>
+                                        &emsp;&emsp;|-- FifthSt_B<br>
+                                        &emsp;&emsp;|-- FifthSt_C<br>
+                                        &emsp;&emsp;|-- FifthSt_D<br>
+                                        &emsp;&emsp;|-- FifthSt_E<br>
+                                        &emsp;&emsp;|-- FifthSt_F<br>
+                                        |--Session_08092023<br>
+                                        |--Session_11072023<br>
+                                        |--Session_11282023<br>
+                                        </blockquote>
+                                    </p>
+                                  </div>
+                                  </li>
+                                </ul>
+
+                                <div class="row gtr-50 gtr-uniform">
+                                    <div class="col-4 col-6-xsmall"><span class="image fit"><img src="images/ASPED/audio_recorder.JPG" alt="audio_recorder" /></span></div>
+                                    <div class="col-4 col-6-xsmall"><span class="image fit"><img src="images/ASPED/installing.JPG" alt="" /></span></div>
+                                    <div class="col-4 col-6-xsmall"><span class="image fit"><img src="images/ASPED/recorders.JPG" alt="" /></span></div>
+                                </div></br>
+                                All the audio files are encoded as FLAC files. FLAC is a widely applied lossless audio encoding format.
+                                For more information about FLAC, please refer to this <a href="https://en.wikipedia.org/wiki/FLAC">Wikipedia page</a>.    </br></br>
+                                For decoding, you can use ffmpeg by running
+                                <pre><code>ffmpeg -i /PATH/TO/FLAC.flac -o /PATH/TO/WAV.wav </code></pre>
+                                or use python packages like '<a href="https://github.com/jiaaro/pydub">Pydub</a>'.
+                                The WAV format audio will be about 1 TB in total and the FLAC format will be about 240 GB.
+                                </p>
+                                </br></br>
+
+                                <h4 id = "video">4. Video Data</h4>
+                                <ul class="actions fit">
+                                  <li><button type="button" class="collapsible">File Structure</button>
+                                  <div class="coll_content">
+                                    <p>
+                                    <blockquote>
+                                        |--Session_07262023<br>
+                                        &emsp;&emsp;|-- FifthSt_A<br>
+                                        &emsp;&emsp;&emsp;&emsp;|--Video &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<i>* each location has one camera</i><br>
+                                        &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;|-- 0001.mp4<br>
+                                        &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;|-- 0002.mp4<br>
+                                        &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;...<br>
+                                        &emsp;&emsp;|-- FifthSt_B<br>
+                                        &emsp;&emsp;|-- FifthSt_C<br>
+                                        &emsp;&emsp;|-- FifthSt_D<br>
+                                        &emsp;&emsp;|-- FifthSt_E<br>
+                                        &emsp;&emsp;|-- FifthSt_F<br>
+                                        |--Session_08092023<br>
+                                        |--Session_11072023<br>
+                                        |--Session_11282023<br>
+                                    </blockquote>
+                                  </p>
+                                </div>
+                                </li>
+                              </ul>
+                                <p>We set up six video cameras to capture footage to determine the actual count of pedestrians walking past the audio recorders.
+                                    Each recording session captured almost 41 hours worth of footage at a rate of 1 frame per second,
+                                    leading to a combined total of approximately 34 days of recordings in the entire dataset among 20 different video recording sessions. </br></br>
+                                    Each camera covered multiple audio recording devices, as depicted in the following map. You can find the map in the metadata file.
+                                    </br>
+                                        <div class="row gtr-50 gtr-uniform">
+                                            <div class="col-6 col-6-xsmall"><span class="image fit"><img src="images/ASPED/video_installing.JPG" alt="video_installing" /></span></div>
+                                            <div class="col-6 col-6-xsmall"><span class="image fit"><img src="images/ASPED.B/AspedB_Recorders.png" alt="location_fifthst" /></span></div>
+                                        </div>
+                                    </br>
+                                This dataset can be utilized either to reproduce the study or to train a computer vision model for pedestrian detection.</br>
+                                </p>
+                                </br></br>
+
+                                <h4 id = "annotation">4. Annotation Data</h4>
+                                <p>Each annotation file lists the number of detected pedestrians within 1, 3, 6, and 9-meter radii around the monitored audio recorders (indicated by the "recorder" columns).
+                                    For ASPED.b, the sample annotation file also includes info regarding whether an audio recorder contains a vehicle inside of the 1, 3, 6, or 9-meter radii
+                                    (indicated by the "view_recorder" columns). Lastly, the annotation file also indicates whether the camera was obstructed by a bus in a specific frame (indicated by the "busFrame" column).
+																		<figcaption>[Sample Annotation Data]</figcaption>
+																		<span class="image center"><img src="images/ASPED.B/AspedB_SampleAnnotations.png" alt="sample_annotation_b" /></span>
+																	</br>
+                                    We used the Masked-attention Mask Transformer (Mask2Former) model to detect and annotate the pedestrians passing by the audio recorders in the video recordings,
+                                    with a prediction accuracy threshold of 0.7. For this research, we used the Mask2Former version from OpenMMLab,
+                                    which was trained using the Microsoft COCO dataset.
+                                </p>
+								</br></br>
                             </section>
                         </div>
                     </div>

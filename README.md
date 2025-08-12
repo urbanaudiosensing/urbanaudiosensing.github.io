@@ -12,9 +12,9 @@ Urban Audio Sensing is a research initiative that explores how audio technology 
 
 ### Key Features
 
-- **Large-scale audio dataset**: ASPED (Audio Sensing for Pedestrian Detection) with over 2,600 hours of audio data
+- **Large-scale audio dataset**: ASPED (Audio Sensing for PEdestrian Detection) with over 2,600 hours of audio data
 - **Multi-modal data**: Audio recordings paired with video frames and pedestrian count annotations
-- **Two environment types**: Campus (vehicle-free) and urban (with vehicular noise) datasets
+- **Two environment types**: Campus (vehicle free) and urban (with vehicular noise) datasets
 - **Machine learning**: Applied music and audio content analysis techniques
 - **Open-source**: Models and datasets available for research use
 
