@@ -122,7 +122,7 @@
                                     </table>
                                 </div>
 
-																<hr>
+								<hr>
                                 <h3><strong>Data Description</strong></h3>
 
 								<ol style="margin-left: 2em;">
@@ -283,6 +283,46 @@
                                     which was trained using the Microsoft COCO dataset.
                                 </p>
 								</br></br>
+
+                                <h4 id="code">5. Code</h4>
+                                <p>
+                                    We have also provided PyTorch util files to help you work with the ASPED dataset. These files handle the data loading, processing, and preparation for model training.
+                                </p>
+                                <div class="table-wrapper">
+                                    <table class="alt">
+                                        <thead>
+                                            <tr>
+                                                <th>File</th>
+                                                <th>Description</th>
+                                                <th>Download</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>Dataset File</td>
+                                                <td>
+                                                    <ul>
+                                                        <li><code>torch.utils.data.Dataset</code> implementation for the ASPED.b dataset</li>
+                                                        <li>Accesses individual audio clips and labels from the dataset, and efficiently</li>
+                                                        <li>Handles large audio files that may be split into multiple parts</li>
+                                                    </ul>
+                                                </td>
+                                                <td><a href="https://github.com/urbanaudiosensing/Models/blob/main/data_utils/dataset.py">Download</a></td>
+                                            </tr>
+                                            <tr>
+                                                <td>DataModule File</td>
+                                                <td>
+                                                    <ul>
+                                                        <li><code>pytorch_lightning.LightningDataModule</code> organizes the entire data pipeline</li>
+                                                        <li>Takes the Dataset above, splits it into training, validation, and test sets, and creates the DataLoaders that feed batches of data to the model</li>
+                                                        <li>Handles data augmentation and class balancing</li>
+                                                    </ul>
+                                                <td><a href="https://github.com/urbanaudiosensing/Models/blob/main/data_utils/datamodule.py">Download</a></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                </br></br>
                             </section>
                         </div>
                     </div>
